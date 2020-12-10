@@ -16,7 +16,6 @@
 </div>
 <nav role="navigation">
     <div id="menuToggle" >
-
       <input type="checkbox" id="hamburger"/>
       <span></span>
       <span></span>
@@ -25,10 +24,43 @@
           <div id ="category">
         <a href="#"><li>STRONA GŁOWNA</li></a>
         <a href="#"><li>O NAS</li></a>
-        <a href="#"><li>OFERTA <button class="plus" id ="first_btn" onclick="add_div(this)">+</button></li></a>
+        <a href="#"><li>OFERTA <button class="plus" id ="first_slide" onclick="add_div(this)">+</button></li></a>
         <a href="#"><li>REALIZACJE </li></a>
-        <a href="#"><li>ARTYKUŁY <button class="plus"id ="second_btn" onclick="add_div(this)">+</button></li></a>
-        <a href="#"><li>KONTAKT <button class="plus"id ="third_btn" onclick="add_div(this)">+</button></li></a>
+        <a href="#"><li>ARTYKUŁY <button class="plus"id ="second_slide" onclick="add_div(this)">+</button></li></a>
+        <a href="#"><li>KONTAKT <button class="plus"id ="third_slide" onclick="add_div(this)">+</button></li></a>
+                <div class="first_slide">
+                    <div class="wrapper">
+                    <div class= "first_slide-look" id ="first_slide-1">Strony Internetowe</div>
+                    <div  class= "first_slide-look" id ="first_slide-2">Sklepy internetowe</div>
+                    <div  class= "first_slide-look" id ="first_slide-3">Projektowanie graficzne</div>
+                    <div  class= "first_slide-look" id ="first_slide-4">Druk materiałów reklamowych</div>
+                    <div  class= "first_slide-look" id ="first_slide-5">Prezentacje i animacje 2D</div>
+                    <div class= "first_slide-look" id ="first_slide-6">Copywriting</div>
+                    </div>
+                </div>
+                <div class="second_slide">
+                    <div class="for_tag" style="margin-bottom: 2em;">Artykuły</div>
+                        <p class ="paragraph_acritcle-left">Systemy CMS - prostota i bezpieczeństwo</p>
+                        <p class ="paragraph_acritcle-left">Projekt graficzny strony internetowej</p>
+                        <p class ="paragraph_acritcle-left">Współczesne standardy i rensponsywność</p>
+                        <p class ="paragraph_acritcle-left">Wysokie pozycje w wyszukiwarkach</p>
+                        <p class ="paragraph_acritcle-right">Domena, serwer i poczta</p>
+                        <p class ="paragraph_acritcle-right">Pomoc powdrożeniowa </p>
+                        <p class ="paragraph_acritcle-right">Etapy realizacji projektu strony www</p>
+                </div>
+                <div class="third_slide"><div class="for_tag">Kontakt</div>
+                    <div id="contant_form">Wyślij nam wiadomość</div>
+                    <div class  = "input_contant">Imię i Nazwisko*<input type text id="name_input" class = "input_contant_text"/></div>
+                    <div class  = "input_contant">Adres email*<input type text id="email_input" class = "input_contant_text"/></div>
+                    <div class  = "input_contant">Treść*<input type text id="text_input" class = "input_contant_text"/></div>
+                    <button id="send">Wyślij</button>
+                    <input type="checkbox" id ="first_accept" class="accept_licence"/>
+                    <label for="first_accept">Wyrażam zgodę na otrzymanie od Volkswagen Group sp. z.o.o<br> 
+                     z siedzibą w Poznaniu infromacji handlowych za pośrednictwem środków <br>komunikacji 
+                    elektronicznej.
+                    </label>
+                     <input type="checkbox" id ="second_accept" class="accept_licence"/>
+                     <label for="second_accept">Wyrażam zgodę na przetwarzanie moich danych osobowych przez Volk-<br>swagen Group Polska sp. z.o.o z siedzibą w Poznanii w celach marketin-<br>gowych.</label>
     </div>
       </ul>
     </div>

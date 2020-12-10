@@ -10,7 +10,7 @@ $("#search").click(function () {
     if($("#text_search" ).length < 1 && click == 1 ){
         //Add div when not be in DOM and first click on button
         $( "<div id='text_search'></div>" ).insertAfter( "#search" );
-        $( "#text_search" ).append( "<div id='search_btn'><p style='margin-top:5px;'>DALEJ</p></div>"  );
+        $( "#text_search" ).append( "<button id='search_btn'>DALEJ</button>"  );
         $( "#text_search" ).append( "<input type text id='search_input'/>"  );
         
     }
@@ -31,8 +31,11 @@ show++;
 });
 
 
-$(".plus").click(function () {
+$(".plus").click(function (e) {
 console.log(this.id);
+e.preventDefault();
+           $('[class^=row]').not($('.'+this.id)).hide();          
+           $('.'+this.id).slideToggle(500);
 });
 
 });
