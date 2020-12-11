@@ -194,7 +194,7 @@ color:white;
     height: 40px;
 }
 .input_contant_text{
-    margin-left:35em;
+    margin-left:47em;
     margin-top: 22em;
     width: 400px!important;
     height: 30px!important;
@@ -244,7 +244,7 @@ color:white;
     color: white;
   }
 #send{
-    margin-left:48em;
+    margin-left:49.5em;
     margin-top:2em;
     background-color: rgba(30,144,255,0.6);
     color:white;
@@ -292,6 +292,7 @@ a:hover
 #category{
     margin-top: 8em;
     line-height: 30px;
+    margin-left:10em;
 }
 #contant_form{
     margin-left:11em;
@@ -305,7 +306,7 @@ a:hover
   display: block;
   position: absolute;
   top: 50px;
-  right: -8em;
+  right: 0em;
  width: 200px;
  height: 200px;
   z-index: 1;
