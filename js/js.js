@@ -2,6 +2,7 @@ $(document).ready(function(){
 var click = 1;
 var show = 1;
 $("#search").click(function () {
+    console.log("ts");
     if(click == 2){
         //If secod click remove a search bar and reset a click variable
         $("#text_search").remove();
@@ -15,9 +16,7 @@ $("#search").click(function () {
         
     }
     click++;
-
 });
-
 
 $('#hamburger').click(function() {
     if(show == 1){
@@ -30,12 +29,14 @@ if(show ==2){
 show++;
 });
 
-
-$(".plus").click(function (e) {
-console.log(this.id);
-e.preventDefault();
-           $('[class^=row]').not($('.'+this.id)).hide();          
-           $('.'+this.id).slideToggle(500);
+$(".plus").click(function(e){
+    e.preventDefault();
+ id=$(this).data('target');
+if($('row' +'#'+id).is(":visible") ) {
+$(".row"+'#'+id).slideUp();
+} else {
+      $(".row"+'#'+id).slideToggle();
+$(".row"+'#'+id).siblings('.row').slideUp();
+ }
 });
-
 });

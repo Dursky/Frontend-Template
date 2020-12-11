@@ -6,7 +6,7 @@
 </head>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="css/css.css">
-<button id="search"><img src="css/icon/search.svg" id="magni" onclick="search();" ></button>
+
 <div id="text_title">
 <h1>Strony www i sklepy internetowe.</h1>
     <div id ="under_title">
@@ -16,6 +16,7 @@
 </div>
 <nav role="navigation">
     <div id="menuToggle" >
+      <button id="search"><img src="css/icon/search.svg"></button>
       <input type="checkbox" id="hamburger"/>
       <span></span>
       <span></span>
@@ -24,31 +25,37 @@
           <div id ="category">
         <a href="#"><li>STRONA GŁOWNA</li></a>
         <a href="#"><li>O NAS</li></a>
-        <a href="#"><li>OFERTA <button class="plus" id ="first_slide" onclick="add_div(this)">+</button></li></a>
+        <a href="#"><li>OFERTA <button class="plus" class ="first_slide"  data-target="first_slide" >+</button></li></a>
         <a href="#"><li>REALIZACJE </li></a>
-        <a href="#"><li>ARTYKUŁY <button class="plus"id ="second_slide" onclick="add_div(this)">+</button></li></a>
-        <a href="#"><li>KONTAKT <button class="plus"id ="third_slide" onclick="add_div(this)">+</button></li></a>
-                <div class="first_slide">
-                    <div class="wrapper">
-                    <div class= "first_slide-look" id ="first_slide-1">Strony Internetowe</div>
-                    <div  class= "first_slide-look" id ="first_slide-2">Sklepy internetowe</div>
-                    <div  class= "first_slide-look" id ="first_slide-3">Projektowanie graficzne</div>
-                    <div  class= "first_slide-look" id ="first_slide-4">Druk materiałów reklamowych</div>
-                    <div  class= "first_slide-look" id ="first_slide-5">Prezentacje i animacje 2D</div>
-                    <div class= "first_slide-look" id ="first_slide-6">Copywriting</div>
-                    </div>
+        <a href="#"><li>ARTYKUŁY <button class="plus" class ="second_slide"  data-target="second_slide" >+</button></li></a>
+        <a href="#"><li>KONTAKT <button class="plus" class="third_slide"  data-target="third_slide" >+</button></li></a>
+                <div class="row" id ="first_slide">
+                    <div  id="offer_menu">Oferta</div>
+                     <table id ="offer">
+                        <tr>
+                           <td> <div class="container"><div class= "first_slide-look" >Strony Internetowe</div></div></td>
+                           <td> <div class="container"></div><div  class= "first_slide-look">Sklepy internetowe</div></div></td>
+                           <td>  <div class="container"></div><div  class= "first_slide-look" >Projektowanie graficzne</div></div></td>
+                           <td><div class="container"></div><div  class= "first_slide-look" >Druk materiałów reklamowych</div></div></td>
+                        </tr>
+                        <tr>
+                            <td> <div class="container"></div><div  class= "first_slide-look" id ="first_slide-5">Prezentacje i animacje 2D</div></div></td>
+                            <td><div class="container"></div><div class= "first_slide-look" id ="first_slide-6">Copywriting</div></div></td>
+                        </tr>
+                    </table>
                 </div>
-                <div class="second_slide">
+                <div id ="second_slide" class="row">
                     <div class="for_tag" style="margin-bottom: 2em;">Artykuły</div>
-                        <p class ="paragraph_acritcle-left">Systemy CMS - prostota i bezpieczeństwo</p>
-                        <p class ="paragraph_acritcle-left">Projekt graficzny strony internetowej</p>
-                        <p class ="paragraph_acritcle-left">Współczesne standardy i rensponsywność</p>
-                        <p class ="paragraph_acritcle-left">Wysokie pozycje w wyszukiwarkach</p>
-                        <p class ="paragraph_acritcle-right">Domena, serwer i poczta</p>
-                        <p class ="paragraph_acritcle-right">Pomoc powdrożeniowa </p>
-                        <p class ="paragraph_acritcle-right">Etapy realizacji projektu strony www</p>
+                        <p class ="paragraph_acritcle-left">Systemy CMS - prostota i bezpieczeństwo →</p>
+                        <p class ="paragraph_acritcle-left">Projekt graficzny strony internetowej →</p>
+                        <p class ="paragraph_acritcle-left">Współczesne standardy i rensponsywność →</p>
+                        <p class ="paragraph_acritcle-left">Wysokie pozycje w wyszukiwarkach →</p>
+                        <p class ="paragraph_acritcle-right">Domena, serwer i poczta →</p>
+                        <p class ="paragraph_acritcle-right">Pomoc powdrożeniowa →</p>
+                        <p class ="paragraph_acritcle-right">Etapy realizacji projektu strony www →</p>
                 </div>
-                <div class="third_slide"><div class="for_tag">Kontakt</div>
+                <div  id ="third_slide"  class="row">
+                    <div class="for_tag">Kontakt</div>
                     <div id="contant_form">Wyślij nam wiadomość</div>
                     <div class  = "input_contant">Imię i Nazwisko*<input type text id="name_input" class = "input_contant_text"/></div>
                     <div class  = "input_contant">Adres email*<input type text id="email_input" class = "input_contant_text"/></div>
