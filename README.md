@@ -1,3 +1,3 @@
-# Interview-Frontend
+# Front Example
 
-Complete Interview task based on template.
+Example front webpage
